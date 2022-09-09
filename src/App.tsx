@@ -1,24 +1,11 @@
 import React from 'react';
 import './App.css';
+import RoutingComponent from './Routes/routing';
 
 function App() {
   return (
-    <div className="App" onContextMenu={(e) => {
-      e.preventDefault()
-      console.log("Main mouse left click");
-    }}  onClick={(e) => {
-      console.log("dsds");
-      console.log(e.type);
-      
-      if(e.type === "contextmenu"){
-      console.log("Mouse Rigth click");
-      } else if (e.type === "clicl"){
-        console.log("mouse left click");
-      }
-    }}>
-      <header className="App-header">
-        <h1>Testing</h1>        
-      </header>
+    <div className="App">
+     <RoutingComponent/>
     </div>
   );
 }
